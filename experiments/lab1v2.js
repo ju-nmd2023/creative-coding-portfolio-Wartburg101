@@ -10,8 +10,8 @@ const gridSizeY = 13; //Size of the grid in Y
 function randomPointOnCircle(cx,cy,r){ //Took help from ChatGPT to create this function
     
     let angle = random(TWO_PI); //Select random angle in radians
-    let x = cx + cos(angle) * r; //Calculate the x position on the circle of this angle
-    let y = cy + sin(angle) * r;
+    let x = cx + cos(angle++) * r; //Calculate the x position on the circle of this angle
+    let y = cy + sin(angle++) * r;
     
     return createVector(x,y); //Return a vector of the x and y position
 }
