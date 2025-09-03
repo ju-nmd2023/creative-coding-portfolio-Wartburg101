@@ -3,5 +3,12 @@
     "file": "experiments/example.js",
     "name": "Name of your experiment",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+   {
+    "file": "experiments/lab1.js",
+    "name": "Werkstatt Edition Kroll Recreation",
+    "description": "An accurate recreation of the 'Werkstatt Edition Kroll' by Georg Nees. Lines drawn between 20 random points on a circle form a dynamic pattern where the circles are more and more filled in as the grid progresses."
   }
 ]
+
+
