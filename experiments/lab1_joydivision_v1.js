@@ -1,0 +1,38 @@
+function setup() {
+    background(0);
+  w = min(windowWidth,windowHeight)
+  createCanvas(w-150, w-150);
+  frameRate(8);
+
+}
+
+
+function draw() {
+    clear();
+    background(255);
+    fill(255);
+    stroke(0);
+    strokeWeight(2);
+
+    //Draws lines across the canvas, makes sure we get 30 evenly spaced lines.
+  for(n = 0; n<height; n+=height/30){
+  beginShape();
+  curveVertex(0,n)
+// Loops horizontally across the canvas, stepping by width/20 each time giving each row 20 control points
+    for (i = 0; i < width; i+=width/20) {
+
+      //Calculated distance from center of canvas using two points (x1, y1, x2, y2))
+      var d = dist(i,n,width/2,n)
+      //Draws the curve vertex, determining the y position of the vertex.
+      
+      curveVertex(i,n-noise(n+i*0.08)*(width/2-d))
+    }
+
+    //Adds the last two control points to close the shape
+  curveVertex(width,n)
+  curveVertex(width,n)
+  endShape();
+  }
+  
+
+}

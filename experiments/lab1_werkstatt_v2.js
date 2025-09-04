@@ -1,6 +1,6 @@
 function setup(){
     createCanvas(innerWidth, innerHeight);
-    background(238,104,88);
+    frameRate(2);
 }
 
 const size = 50;
@@ -16,8 +16,16 @@ function randomPointOnCircle(cx,cy,r){ //Took help from ChatGPT to create this f
     return createVector(x,y); //Return a vector of the x and y position
 }
 
+function randomColor(){
+    let whiteColor = color(255);
+    let blueColor = color(0, 0, 255);
+    let colors = [whiteColor, blueColor];
+    return random(colors);
+}
+
 function drawCircles(x,y,numlines){
-    
+
+   stroke(randomColor());
     let lineEdge; //Create a variable to save the position where the line hit the wall
     let p1 = randomPointOnCircle(x,y,size/2); 
     let p2 = randomPointOnCircle(x,y,size/2); //Pick two starter points
@@ -27,16 +35,16 @@ function drawCircles(x,y,numlines){
             p1 = p2; 
             p2 = randomPointOnCircle(x,y,size/2);
             line(p1.x,p1.y,p2.x,p2.y);
-            noLoop();
+        
     }
 
 }
 
 
 
-
-
 function draw(){
+    clear();
+    background(4,5,2);
     let numlines = 5; //Number of lines to be drawn in the first circle
     let firstCircle = true; //Boolean that determines if the current circle is the first one
     translate(width/2 - (50*9)/2,height/2 - (50*14)/2); // Center the artpiece
@@ -46,11 +54,10 @@ function draw(){
                 firstCircle = false;
                 numlines++;
                 drawCircles(size / 2 + x * size, size / 2 + y * size, numlines);
-                
             }
-           
         }
     }
+  
     
     
 

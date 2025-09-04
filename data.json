@@ -1,14 +1,27 @@
 [
+  
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/lab1_joydivision_v1.js",
+    "name": "Joy Division Unknown Pleasures Artwork",
+    "description": "Artwork inspired by the album cover of 'Unknown Pleasures' by Joy Division. Black lines on a white background form a dynamic pattern where the lines are generated based on a noise pattern. The artwork was built using the tutorial found here but with some adaptations made: https://www.gorillasun.de/blog/smooth-curves-with-perlin-noise-and-recreating-the-unknown-pleasures-album-cover-in-p5/"
+  },
+  {
+    "file": "experiments/lab1_joydivision_v2.js",
+    "name": "Joy Division Unknown Pleasures Artwork Version",
+    "description": "Artwork inspired by the album cover of 'Unknown Pleasures' by Joy Division. This version was tweaked with fewer ridges and more rows creating the illusion of a landscape. I also added more rows and an animation. It's still based on the tutorial found here: https://www.gorillasun.de/blog/smooth-curves-with-perlin-noise-and-recreating-the-unknown-pleasures-album-cover-in-p5/"
   },
    {
-    "file": "experiments/lab1.js",
+    "file": "experiments/lab1_werkstatt.js",
     "name": "Werkstatt Edition Kroll Recreation",
-    "description": "An accurate recreation of the 'Werkstatt Edition Kroll' by Georg Nees. Lines drawn between 20 random points on a circle form a dynamic pattern where the circles are more and more filled in as the grid progresses."
+    "description": "An accurate recreation of the 'Werkstatt Edition Kroll' by Georg Nees. Lines drawn between random points on a circle form a dynamic pattern where the circles are more and more filled in as the grid progresses."
+  },
+  {
+    "file": "experiments/lab1_werkstatt_v2.js",
+    "name": "Werkstatt Edition Kroll Variant 2",
+    "description": "A variant of the 'Werkstatt Edition Kroll' by Georg Nees. Lines drawn between random points on a circle form a dynamic pattern where the circles are more and more filled in as the grid progresses. This version uses a different color palette and updates two times a second."
   }
+
+  
 ]
 
 
