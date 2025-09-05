@@ -1,9 +1,10 @@
+// Based on tutorial found here: https://www.gorillasun.de/blog/smooth-curves-with-perlin-noise-and-recreating-the-unknown-pleasures-album-cover-in-p5/
+
 function setup() {
     background(0);
   w = min(windowWidth,windowHeight)
   createCanvas(w-150, w-150);
   frameRate(8);
-
 }
 
 

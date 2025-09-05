@@ -1,12 +1,11 @@
+// Based on tutorial found here: https://www.gorillasun.de/blog/smooth-curves-with-perlin-noise-and-recreating-the-unknown-pleasures-album-cover-in-p5/ 
+
 function setup() {
     background(0);
   w = min(windowWidth,windowHeight)
   createCanvas(w-150, w-150);
   frameRate(10);
 }
-
-
-
 
 function draw() {
     clear();
@@ -25,7 +24,6 @@ function draw() {
       //Calculated distance from center of canvas using two points (x1, y1, x2, y2))
       var d = dist(i,n,width/2,n)
       //Draws the curve vertex, determining the y position of the vertex.
-      
       curveVertex(i,n-noise(n+i*0.001)*(width/2-d))
       
     }
