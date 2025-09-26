@@ -3,17 +3,12 @@ let sizes = [];
 let cols = 40; let rows = 40; let size = 10;
 let xOff = 0; let yOff = 0; let zOff = 0;
 
-
-
-
 function setup(){
     createCanvas(innerWidth, innerHeight, WEBGL);
     rectMode(CENTER);
     angleMode(DEGREES);
     //Divide canvas into a grid 
     //based on the size of the rectangles and width / height of screen
-    
-
 }
 
 function draw(){
@@ -43,8 +38,7 @@ function draw(){
             fill(sizes[i][j]);
             translate(i*size-200, 0, j*size-200);
             box(size,sizes[i][j],size);
-            pop();
-                
+            pop();   
             
         }
         xOff += 0.1;
