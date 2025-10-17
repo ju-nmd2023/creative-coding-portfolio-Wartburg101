@@ -1,10 +1,5 @@
 [
   {
-    "file": "experiments/lab3.js",
-    "name": "Terrain Generator Affected by Sound",
-    "description": "A random terrain generator using perlin noise controlling the y axis on a grid of 3d rectangles. In this version the terrain is affected by sound, controlled by two sliders. The design is based on the following tutorial: https://www.youtube.com/watch?v=fN0Wa9mvT60"
-  },
-  {
     "file": "experiments/lab1_joydivision_v1.js",
     "name": "Joy Division Unknown Pleasures Artwork",
     "description": "Artwork inspired by the album cover of 'Unknown Pleasures' by Joy Division. Black lines on a white background form a dynamic pattern where the lines are generated based on a noise pattern. The artwork was built using the tutorial found here but with some adaptations made: https://www.gorillasun.de/blog/smooth-curves-with-perlin-noise-and-recreating-the-unknown-pleasures-album-cover-in-p5/"
@@ -36,7 +31,11 @@
     "description": "A random terrain generator using perlin noise controlling the y axis on a grid of 3d rectangles. In this version the fill of the rectangle is controlled by its height. The design is based on the following tutorial: https://www.youtube.com/watch?v=fN0Wa9mvT60"
   }
 
-  
+  {
+    "file": "experiments/lab3.js",
+    "name": "Terrain Generator Affected by Sound",
+    "description": "A random terrain generator using perlin noise controlling the y axis on a grid of 3d rectangles. In this version the terrain is affected by sound, controlled by two sliders. The design is based on the following tutorial: https://www.youtube.com/watch?v=fN0Wa9mvT60"
+  }
 ]
 
 
