@@ -17,10 +17,6 @@ window.addEventListener("load", function () {
   oscillator.volume.value = -30;
 });
 
-window.addEventListener("click", function () {
-  Tone.start();
-});
-
 function setup() {
   createCanvas(innerWidth, innerHeight, WEBGL);
   rectMode(CENTER);
@@ -29,6 +25,8 @@ function setup() {
   oscillator = new Tone.Oscillator(200, "sine").toDestination();
   oscillator.volume.value = -30;
 
+  Tone.start();
+  
   let startbutton = createButton("Start Audio");
   let stopbutton = createButton("Stop Audio");
   startbutton.mousePressed(() => {
