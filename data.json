@@ -29,7 +29,7 @@
     "file": "experiments/lab2_v2.js",
     "name": "Random Terrain Generator Version 2",
     "description": "A random terrain generator using perlin noise controlling the y axis on a grid of 3d rectangles. In this version the fill of the rectangle is controlled by its height. The design is based on the following tutorial: https://www.youtube.com/watch?v=fN0Wa9mvT60"
-  }
+  },
 
   {
     "file": "experiments/lab3.js",
